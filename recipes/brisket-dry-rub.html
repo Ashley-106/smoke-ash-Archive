@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Smoke & Ash</title>
+</head>
+<body>
+
+    <header id="header">
+
+        <h4 id="temp" class="temp-drop">Temperature Converter</h4>
+        <div id="temp-dropDown" class="temp-drop">
+
+            <form>
+                <label for="temp">Select known scale:</label>
+                <br>
+                <input id="f" type="radio" name="temp" for="temp" value="f" >°F</input>
+                <input id="c" type="radio" name="temp" for="temp" value="c" checked>°C</input>
+                <br>
+
+                <label for="input">Enter known temp:</label>
+                <input id="num" type="number" for="input">
+                <br>
+                <h3 id="calc" class="btn">Convert</h3>
+                <br>
+                <div>
+                    <p id="output"> </p>
+                </div>
+
+            </form>
+
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li id="DIY" class="Diy-drop">DIY</li>
+                <div id="DIY-dropDown" class="Diy-drop">
+                    <li><a href="../barrel-smoker.html">Barrel Smoker</a></li>
+                    <li><a href="test">COMING SOON</a></li>
+                    <li><a href="test">COMING SOON</a></li>
+                </div>
+                <li id="recipes" class="recipes-drop">Recipes</li>
+                <div id="recipes-dropDown" class="recipes-drop">
+                    <li><a href="brisket.html">Brisket</a></li>
+                    <li><a href="pork-ribs.html">Pork ribs</a></li>
+                    <li><a href="brisket-dry-rub.html">Brisket dry rub</a></li>
+                    <li><a href="porkrib-dry-rub.html">Pork dry rub</a></li>
+                    <li><a href="whiskey-bbq-sauce.html">Whiskey BBQ sauce</a></li>
+                </div>
+            </ul>
+        </nav>
+    
+
+    </header>
+    <div class="container">
+
+        <div class="recipe-container">
+            <div class="content">
+                <h1>Brisket Dry Rub</h1>
+                <p id="center">Brisket dry rub requires the following ingredients: </p>
+                    <ul>
+                        <li>Smoked paprika: 150g</li>
+                        <li>Cayenne pepper: 150g</li>
+                        <li>Chilli powder: 50g</li>
+                        <li>Mustard powder: 50g</li>
+                        <li>Garlic powder: 30g</li>
+                        <li>Onion powder: 30g</li>
+                        <li>Brown sugar: 200g</li>
+                        <li>Salt/Black pepper</li>
+                    </ul>
+
+                <h4>Method</h4>
+                    <ol>
+                        <li>Combine all of the above ingreidants into a large spice container 
+                            prefferably with a shaker cap for easy application.</li>
+                        <li>Give the container a good shake to mix well.</li>
+                    </ol>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../scripts.js"></script>
+<script src="../temp-convert.js"></script>
+</body>
+</html>

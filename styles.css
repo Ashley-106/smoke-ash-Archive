@@ -1,0 +1,388 @@
+
+/* fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;  
+    background-image: url(img/background.jpg);
+    background-size: cover; 
+    background-repeat: repeat;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.wrap-two {
+    background-image: url(img/background.jpg);
+    background-size: cover; 
+    background-repeat: repeat;
+}
+
+.wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.img {
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+/* Navigation elements -----------------------------------start */
+#header {
+    display: flex;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .8);
+    align-items: center;
+    font-weight: bold;
+}
+
+#temp {
+    color: lightgrey;
+    margin-left: 1.5em;
+}
+
+#temp:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#temp-dropDown {
+    visibility: hidden;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+    height: 220px;
+    width: 220px;
+    color: white;
+    padding: 1em;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.btn {
+    border: solid white 2px;
+    padding: .2em;
+    display: inline-block;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#nav {
+    margin-left: auto;
+}
+
+#nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav li {
+    margin: 0 1.5em;
+}
+
+a:link, #nav li {
+    color: lightgray;
+    text-decoration: none;
+}
+a:visited {
+    color: lightgray;
+}
+
+a:hover, #nav li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#DIY-dropDown {
+    visibility: hidden;
+    position: absolute;
+    top: 2.5em;
+    right: 3.8em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#DIY-dropDown li {
+    margin: 1em 1em;
+}
+
+#recipes-dropDown {
+    visibility: hidden;
+    position: absolute;
+    top: 2.5em;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#recipes-dropDown li {
+    margin: 1em 1em;
+}
+
+/* Navigation elements -----------------------------------end */
+
+/* page elements --------------------------------------- start */
+
+.container-home {
+    display: flex;
+}
+
+#landing { 
+    margin: auto;
+ } 
+
+.cover-card {
+    font-family: piedra;
+    margin: auto;
+    padding: 1.3em;
+}
+
+.cover-card h1 {
+    font-size: 10em;
+    transform: rotate(-5deg);
+    margin: 1.3em 0 0;
+}
+
+.cover-card p {
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* page elements --------------------------------------- finish */
+
+
+/* DIY styles */
+
+.img-container {
+   display: flex;
+   justify-content: space-around;
+   height: 700px;
+   margin: 1em 
+}
+
+.img-one h2, .img-two h2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: .5em;
+    color: white;
+}
+
+
+.img-one {
+    background-image: url(img/before.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    box-shadow: 10px 10px 10px black;
+}
+
+.img-two {
+    background-image: url(img/finished.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+img {
+    margin: 1em auto;
+    box-shadow: 10px 10px 10px black;
+}
+
+.container-head {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+.content-head {
+    padding: 10px 10px;
+    margin-top: 2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+.stand-out {
+    border: solid white 2px;
+    padding: .4em
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.recipe-container {
+    width: 50%;
+    margin: auto;
+}
+
+.wrapper {
+    width: 50%;
+}
+
+.content {
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+.content p, .content h4 {
+    text-align: left;
+}
+
+.content h4:last-child {
+    text-align: center;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content ol {
+    text-align: left;
+}
+
+span {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#center {
+    text-align: center;
+}
+
+/* media queries */
+
+
+/* at 1250px and below styles */
+@media (max-width: 1250px) {
+
+    .container-head {
+        width: 90%;
+    }
+
+    .img-container {
+        height: 400px;
+    }
+
+    img {
+        height: 400px;
+    }
+
+}
+
+/* at 1550px and below styles */
+@media (max-width: 1550px) {
+
+    .wrapper {
+        width: 70%;
+    }
+
+    .container-head {
+        width: 80%;
+    }
+
+    .recipe-container {
+        width: 70%;
+    }
+}
+
+
+/* at 860px and below styles */
+@media (max-width: 860px) {
+    
+    .cover-card h1 {
+        font-size: 8em;
+        margin: 2em 0 0;
+    }
+
+    .cover-card p {
+        font-size: 2em;
+    }
+
+    .container-head {
+        font-size: .8em;
+        width: 100%;
+    }
+
+    .recipe-container {
+        width: 90%;
+    }
+
+    
+}
+
+/* at 685px and below styles */
+@media (max-width: 685px) {
+
+    .cover-card h1 {
+        font-size: 6.5em;
+        margin: 2.8em 0 0;
+    }
+
+    .cover-card p {
+        font-size: 1.5em;
+    }
+
+}
+
+/* at 650px and below styles */
+@media (max-width: 650px) {
+
+    .cover-card h1 {
+        font-size: 5.5em;
+        margin: 3.5em 0 0;
+    }
+
+    .cover-card p {
+        font-size: 1.5em;
+    }
+
+    #header {
+        font-size: .8em;
+    }
+
+    #nav li {
+        margin: 0 .5em;
+    }
+    
+}
+
+/* at 510px and below styles */
+@media (max-width: 510px) {
+
+    .cover-card h1 {
+        font-size: 3em;
+    }
+
+    .cover-card p {
+        font-size: 1.5em;
+    }
+}
